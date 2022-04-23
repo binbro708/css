@@ -1,0 +1,487 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+/* *start */
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* *wrap */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+/* *header  fan*/
+.fanbar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px 15px;
+  background-color: #f6f6f6;
+}
+.fanbar .fbbar {
+  padding-right: 10px;
+  border-right: 1px solid gray;
+  color: #4460a0;
+}
+.fanbar .twbar {
+  padding-left: 10px;
+  color: #39a0c9;
+}
+
+.fbbar a:visited {
+  color: #4460a0;
+}
+.twbar a:visited {
+  color: #39a0c9;
+}
+/** header LOGO */
+
+.headerlogo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo a {
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  height: 50px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+  text-indent: 101%;
+  white-space: nowrap;
+}
+/* *headermenu */
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/* !border 設在p跟a是不同地方 */
+.menu p {
+  padding: 0 20px;
+  color: #00cc99;
+}
+.menu a {
+  display: block;
+  padding: 10px;
+  border-bottom: 5px solid transparent;
+}
+.menu .menuMain {
+  color: #00cc99;
+}
+.menu .menuMain:visited {
+  color: #00cc99;
+}
+.menu .menuMain:hover {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #00cc99;
+}
+.menu .menuMain:active {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #00cc99;
+  color: #00cc99;
+
+}
+
+/* *表單 */
+.menu ul {
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+
+.menu .menuLink {
+  color: #000;
+  border: 1px solid #00cc99;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+.menuLink:hover {
+  color: #00cc99;
+}
+
+
+/* *banner */
+
+/* .banner {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+}
+
+.bannertext {
+  padding-top: 60px;
+  padding-left: 20px;
+  color: white;
+  font-size: 30px;
+  line-height: 5px;
+}
+.bannerp {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.bannerp .p2 {
+  padding-bottom: 45px;
+} */
+
+/* * main */
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainblock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 55px;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+  box-shadow: 3px 6px 10px -4px;
+}
+
+.rwd p {
+  word-break: break-all;
+}
+
+.mainblock p,
+.jq ul,
+.jq li {
+  width: 255px;
+  letter-spacing: 0.3px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.rwd p {
+  padding: 0px 20px 20px 20px;
+}
+
+.jq ul {
+  padding: 0px 20px 20px 30px;
+  list-style-type: disc;
+}
+.jq p {
+  margin-right: 20px;
+}
+
+.html5 {
+  padding: 0px 20px 10px 20px;
+}
+
+.mainblock img {
+  padding-top: 50px;
+}
+.html5 img {
+  margin-bottom: 10px;
+}
+.rwd img {
+  margin-bottom: 58px;
+}
+.jq img {
+  margin-bottom: 28px;
+}
+
+.mainblock h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.jQtitle{
+  margin-left: 15px;
+}
+/* *content */
+.content {
+  margin: 60px 0px;
+}
+
+h3 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* *table */
+.price {
+  text-align: left;
+}
+.price th {
+  padding: 10px 130px 12px 14px;
+  background-color: #f6f5f8;
+  font-weight: bold;
+}
+.price td {
+  padding: 10px 135px 12px 14px;
+}
+
+.price th,
+.price td {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.emphasize {
+  color: #68b2a6;
+}
+/* *register */
+
+.register {
+  margin-bottom: 30px;
+  padding-top: 40px;
+  background: linear-gradient(#00664c, #009871);
+}
+
+.register p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.response {
+  display: flex;
+  margin-top: 30px;
+}
+
+.tellme,
+.bar,
+.sendout {
+  border: none;
+}
+
+.tellme {
+  margin: 0px 35px 25px 20px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.profile {
+  margin-right: 30px;
+}
+
+.profile h4 {
+  color: #ffffff;
+}
+
+.profile .bar {
+  margin: 5px 0px 15px 0px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.sendout {
+  float: right;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: #00cc99;
+  color: #ffffff;
+}
+
+.sendout:hover {
+  cursor: pointer;
+}
+
+/* *footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.footertext {
+  padding-right: 20px;
+  line-height: 1.5;
+}
+
+.footertext a {
+  color: #e54991;
+}
+
+/* *燈箱 */
+.swiper {
+  width: 1000px;
+}
+
+.banner {
+  width: 1000px;
+  background-color: rgb(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 9;
+  margin-top: 100px;
+}
+
+.bannerText{
+  padding: 40px 0 40px 50px;
+  margin-bottom: 90px;
+
+}
+.bannerText p{
+  color: #FFF;
+  text-align: left;
+  font-size: 36px;
+  line-height: 48px;
+  
+}
+
+/* *TOP */
+.top{
+  position: fixed;
+  bottom:0;
+  right: 0;
+}
+
+.top i{
+  font-size:50px ;
+}
+
+
+/* *建議 */
+
+.menu .menuMain:active , .menuMain.active{
+  padding-bottom: 10px;
+  border-bottom: 5px solid #00cc99;
+  color: #00cc99;
+}
+.menu li {
+  position: relative;
+}
+.menu li ul {
+  width: 100%;
+  text-align: center;
+}
